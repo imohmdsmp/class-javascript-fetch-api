@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top:40px ;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 210px;
+    margin: 50px;
+    background-image: linear-gradient(#2b7cb4, #d5d5f1);
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(136, 136, 235);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 180px;
+}
+
+main>div {
+    border-radius: 25px;
+    display: flex;
+    width: 300px;
+    height: 310px;
+    box-shadow: 0 0 10px rgb(232 232 232);
+    flex-direction: column;
+    align-items: center;
+    /* margin: 30px; */
+    position: relative;
+    justify-content: center;
+}
+
+
+main>div figure {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
